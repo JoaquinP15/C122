@@ -29,7 +29,12 @@ recognition.onresult = function(event) {
 
   to_number = Number(content);
 
-  if(Number.isInteger(to_number))
+  if(Number.isInteger(to_number)){
+    draw_apple = "set";
+  }
+  else{
+    draw_apple = "The speech has not recognized a number";
+  }
 
  console.log(event); 
 
